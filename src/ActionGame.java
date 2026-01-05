@@ -1,7 +1,6 @@
-// Refined Abstraction (Geliştirilmiş Soyutlama)
-// Game arayüzünü uygular ve bir Controller (Implementor) kullanarak köprüyü kurar.
 public class ActionGame implements Game {
 
+    // Refined Abstraction: Köprüyü kullanır
     protected Controller controller;
 
     public ActionGame(Controller controller) {
