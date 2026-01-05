@@ -1,5 +1,8 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+// Client (İstemci)
+// Soyutlama (Game) ve Uygulayıcı (Controller) nesnelerini oluşturur ve bunları birbirine bağlar.
+// Bu sayede Oyun tipi ve Kontrolcü tipi birbirinden bağımsız olarak değiştirilebilir.
 public class Main {
     public static void main(String[] args) {
 
@@ -7,7 +10,7 @@ public class Main {
         Controller controller1 = new GamepadController();
         Game game = new ActionGame(controller);
 
-        Game game1 =new RacingGame(controller1);
+        Game game1 = new RacingGame(controller1);
         game.play();
         game1.play();
 
