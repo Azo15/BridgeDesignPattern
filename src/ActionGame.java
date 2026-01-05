@@ -1,6 +1,9 @@
-public class ActionGame implements Game{
+// Refined Abstraction (Geliştirilmiş Soyutlama)
+// Game arayüzünü uygular ve bir Controller (Implementor) kullanarak köprüyü kurar.
+public class ActionGame implements Game {
 
     protected Controller controller;
+
     public ActionGame(Controller controller) {
         this.controller = controller;
     }
@@ -10,8 +13,5 @@ public class ActionGame implements Game{
         System.out.println("Action Oyunu başlatılıyor...");
         controller.configureController();
     }
-
-
-
 
 }
