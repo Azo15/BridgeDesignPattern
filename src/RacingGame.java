@@ -1,6 +1,5 @@
-// Refined Abstraction (Geliştirilmiş Soyutlama)
-// Game arayüzünü uygular ve farklı bir oyun türü için köprüyü kullanır.
 public class RacingGame implements Game {
+    // Refined Abstraction: Köprüyü kullanır
     protected Controller controller;
 
     public RacingGame(Controller controller) {
